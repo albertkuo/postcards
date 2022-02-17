@@ -21,25 +21,25 @@
 .profile-pic {
   opacity: 0;
   animation: fade-in 1s forwards;
-  animation-delay: 300ms;
+  animation-delay: 200ms;
 }
 
 .biography-title {
   opacity: 0;
   animation: fade-in 1s forwards;
-  animation-delay: 400ms;
+  animation-delay: 300ms;
 }
 
 .main-content {
   opacity: 0;
   animation: fade-in 1s forwards;
-  animation-delay: 500ms;
+  animation-delay: 400ms;
 }
 
 .button-row {
   opacity: 0;
   animation: slide-from-bottom 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 500ms;
+  animation-delay: 400ms;
 }
 
 a {
