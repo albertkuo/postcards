@@ -2,6 +2,7 @@
 % Please edit documentation in R/postcards.R
 \name{jolla}
 \alias{jolla}
+\alias{jolla_anim}
 \alias{jolla_blue}
 \alias{trestles}
 \alias{onofre}
@@ -9,6 +10,8 @@
 \title{Postcards templates}
 \usage{
 jolla(css = NULL, includes = NULL, ...)
+
+jolla_anim(css = NULL, includes = NULL, ...)
 
 jolla_blue(css = NULL, includes = NULL, ...)
 

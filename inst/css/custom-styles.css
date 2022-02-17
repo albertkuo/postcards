@@ -1,0 +1,86 @@
+@keyframes slide-from-right {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes slide-right {
+      100% { left: 0; opacity: 1}
+  }
+  
+  @keyframes slide-right {
+      100% { left: 0; opacity: 1; }
+  }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.profile-pic {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  animation-delay: 1ms;
+}
+
+.biography-title {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  animation-delay: 100ms;
+}
+
+.main-content {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  animation-delay: 200ms;
+}
+
+.button-row {
+  opacity: 0;
+  animation: slide-from-bottom 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 300ms;
+}
+
+
+
+a {
+  color: #c05b4d;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #c05b4d;
+}
+
+a:hover {
+  color: #c05b4d;
+}
+
+a:active {
+  color: #c05b4d;
+}
+
+a:focus {
+  color: #c05b4d;
+}

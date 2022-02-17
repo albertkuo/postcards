@@ -9,6 +9,15 @@ jolla <- function(css = NULL, includes = NULL, ...) {
 
 #' @rdname jolla
 #' @export
+jolla_anim <- function(css = system.file("css",
+                                         "custom-styles.css",
+                                         package = "postcards")
+                       , includes = NULL, ...) {
+    get_template("jolla-anim", css, includes, ...)
+}
+
+#' @rdname jolla
+#' @export
 jolla_blue <- function(css = NULL, includes = NULL, ...) {
   get_template("jolla-blue", css, includes, ...)
 }

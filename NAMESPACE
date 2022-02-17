@@ -2,6 +2,7 @@
 
 export(create_postcard)
 export(jolla)
+export(jolla_anim)
 export(jolla_blue)
 export(onofre)
 export(solana)
