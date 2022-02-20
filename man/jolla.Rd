@@ -3,6 +3,7 @@
 \name{jolla}
 \alias{jolla}
 \alias{jolla_anim}
+\alias{jolla_anim_mine}
 \alias{jolla_blue}
 \alias{trestles}
 \alias{onofre}
@@ -11,7 +12,17 @@
 \usage{
 jolla(css = NULL, includes = NULL, ...)
 
-jolla_anim(css = NULL, includes = NULL, ...)
+jolla_anim(
+  css = system.file("css", "custom-styles.css", package = "postcards"),
+  includes = NULL,
+  ...
+)
+
+jolla_anim_mine(
+  css = system.file("css", "custom-styles-mine.css", package = "postcards"),
+  includes = NULL,
+  ...
+)
 
 jolla_blue(css = NULL, includes = NULL, ...)
 

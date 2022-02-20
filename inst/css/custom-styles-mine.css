@@ -60,6 +60,7 @@
 }
 
 .biography-title {
+  font-family: 'Apple Chancery', cursive;
   opacity: 0;
   -webkit-animation: fade-in 1s forwards;
           animation: fade-in 1s forwards;
@@ -85,6 +86,11 @@
 
 
 /* Colors and fonts */
+p {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  color: #34495e;
+}
+
 a {
   color: #c05b4d;
   text-decoration: none;
