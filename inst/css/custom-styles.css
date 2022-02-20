@@ -85,23 +85,6 @@
 
 
 /* Colors and fonts */
-a {
-  color: #c05b4d;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #c05b4d;
-}
-
-a:hover {
-  color: #c05b4d;
-}
-
-a:active {
-  color: #c05b4d;
-}
-
-a:focus {
+a:link, a:visited, a:hover, a:active, a:focus {
   color: #c05b4d;
 }
