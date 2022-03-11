@@ -8,6 +8,7 @@
 \alias{trestles}
 \alias{onofre}
 \alias{solana}
+\alias{solana_mine}
 \title{Postcards templates}
 \usage{
 jolla(css = NULL, includes = NULL, ...)
@@ -19,7 +20,7 @@ jolla_anim(
 )
 
 jolla_anim_mine(
-  css = system.file("css", "custom-styles-mine.css", package = "postcards"),
+  css = system.file("css", "custom-styles-jolla.css", package = "postcards"),
   includes = NULL,
   ...
 )
@@ -31,6 +32,12 @@ trestles(css = NULL, includes = NULL, ...)
 onofre(css = NULL, includes = NULL, ...)
 
 solana(css = NULL, includes = NULL, ...)
+
+solana_mine(
+  css = system.file("css", "custom-styles-solana.css", package = "postcards"),
+  includes = NULL,
+  ...
+)
 }
 \arguments{
 \item{css}{CSS and/or Sass files to include. Files with an extension of .sass

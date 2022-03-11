@@ -11,17 +11,17 @@ jolla <- function(css = NULL, includes = NULL, ...) {
 #' @export
 jolla_anim <- function(css = system.file("css",
                                          "custom-styles.css",
-                                         package = "postcards")
-                       , includes = NULL, ...) {
+                                         package = "postcards"),
+                       includes = NULL, ...) {
     get_template("jolla-anim", css, includes, ...)
 }
 
 #' @rdname jolla
 #' @export
 jolla_anim_mine <- function(css = system.file("css",
-                                              "custom-styles-mine.css",
-                                              package = "postcards")
-                            , includes = NULL, ...) {
+                                              "custom-styles-jolla.css",
+                                              package = "postcards"),
+                            includes = NULL, ...) {
     get_template("jolla-anim-mine", css, includes, ...)
 }
 
@@ -47,6 +47,15 @@ onofre <- function(css = NULL, includes = NULL, ...) {
 #' @export
 solana <- function(css = NULL, includes = NULL, ...) {
   get_template("solana", css, includes, ...)
+}
+
+#' @rdname jolla
+#' @export
+solana_mine <- function(css = system.file("css",
+                                          "custom-styles-solana.css",
+                                          package = "postcards"),
+                        includes = NULL, ...) {
+    get_template("solana-mine", css, includes, ...)
 }
 
 get_template <- function(name, css, includes, ...) {
