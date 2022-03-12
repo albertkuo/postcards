@@ -51,6 +51,12 @@
 }
 
 /* Class elements */
+.animate-out {
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+    opacity: 0;
+}
+
 .profile-pic {
   opacity: 0;
   -webkit-animation: fade-in 1s forwards;

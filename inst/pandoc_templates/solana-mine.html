@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <style type="text/css">body {font-family: 'Roboto Mono', serif;}</style>
 
+    <!-- CSS -->
     <style>
       @media screen and (min-width: 768px) {
         .container {
@@ -19,16 +20,11 @@
       }
 
       body {
-        background-color: #000000;
-        transition: background-color 2s ease-in;
+        background-color: #ffffff;
+        transition: background-color 1s ease-in;
       }
     </style>
 
-<script>
-    window.onload = function() {
-        document.body.style.backgroundColor = '#f5e9dd';
-    }
-</script>
 
     <title>$title$</title>
 
@@ -44,8 +40,19 @@
       <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
     $endfor$
 
+    <!-- Javascript to fade in and out -->
+    <script>
+        window.addEventListener("beforeunload", function () {
+            document.body.classList.add("animate-out");
+        });
+
+        window.onload = function() {
+        document.body.style.backgroundColor = '#f5e9dd';};
+    </script>
+
+
   </head>
-  <body>
+  <body class="animate-in">
 
     $for(include-before)$
       $include-before$

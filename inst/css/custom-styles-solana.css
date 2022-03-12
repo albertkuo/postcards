@@ -6,8 +6,35 @@
 */
 
 /* Animations */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* Class elements */
+.animate-in {
+    -webkit-animation: fade-in 1s ease-in;
+    animation: fade-in 1s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+    opacity: 0;
+}
 
 /* Colors and fonts */
 a:link, a:visited, a:hover, a:active, a:focus {
