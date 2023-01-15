@@ -114,27 +114,25 @@
 /* Colors and fonts */
 /* styles for dark mode */
 body {
+    --h1-color: #34495e;
     --text-color: #34495e;
     --bkg-color: #fff;
     --hr-color: #f3f3f3;
 }
 body.dark-theme {
-    --text-color: #8e8e8e;
+    --h1-color: #989ea4;
+    --text-color: #7a828a;
     --bkg-color: #171717;
-    --hr-color: #2e2e2e;
+    --hr-color: #40464b;
 }
 
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
   body {
-    --text-color: #8e8e8e;
+    --h1-color: #989ea4;
+    --text-color: #7a828a;
     --bkg-color: #171717;
-    --hr-color: #2e2e2e;
-  }
-  body.light-theme {
-    --text-color: #34495e;
-    --bkg-color: #fff;
-    --hr-color: #f3f3f3;
+    --hr-color: #40464b;
   }
 }
 
@@ -143,7 +141,7 @@ body {
 }
 
 h1 {
-  color: var(--text-color);
+  color: var(--h1-color);
 }
 
 p {
