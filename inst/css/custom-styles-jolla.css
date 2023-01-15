@@ -112,9 +112,47 @@
 }
 
 /* Colors and fonts */
+/* styles for dark mode */
+body {
+    --text-color: #34495e;
+    --bkg-color: #fff;
+    --hr-color: #f3f3f3;
+}
+body.dark-theme {
+    --text-color: #8e8e8e;
+    --bkg-color: #171717;
+    --hr-color: #2e2e2e;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #8e8e8e;
+    --bkg-color: #171717;
+    --hr-color: #2e2e2e;
+  }
+  body.light-theme {
+    --text-color: #34495e;
+    --bkg-color: #fff;
+    --hr-color: #f3f3f3;
+  }
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1 {
+  color: var(--text-color);
+}
+
 p {
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-  color: #34495e;
+  color: var(--text-color);
+}
+
+hr {
+  background-color: var(--hr-color);
 }
 
 a:link, a:visited, a:hover, a:active, a:focus {
